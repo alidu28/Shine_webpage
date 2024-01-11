@@ -8,11 +8,11 @@
 /* Media Queries */
 
 /* For laptop */
-@media screen and (min-width: 1024px) {
+@media screen and (max-width: 1024px) {
     #nav-bar{
         display: flex;
         align-items: center;
-        padding: 2rem 3rem;
+        padding: 1rem 2rem;
         justify-content: space-between;
         background-color: transparent;
         position: fixed;
@@ -24,7 +24,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 37rem;
+        width: 30.5rem;
     }
     
     #nav-bar .logo-contain{
@@ -33,7 +33,7 @@
     }
     
     #nav-bar .logo-text{
-        font-size: 1.2rem;
+        font-size: 1rem;
         color: #CF0D0D;
     }
     
@@ -43,13 +43,13 @@
     }
     
     #nav-bar .nav-list li{
-        padding-inline: 1rem;
+        padding-inline: .6rem;
     }
     
     #nav-bar .nav-list a{
         text-decoration: none;
         color: black;
-        font-size: 1.1rem;
+        font-size: .9rem;
     }
     
     #nav-bar .nav-btn{
@@ -57,7 +57,7 @@
     }
     
     #nav-bar .nav-btn a{
-        font-size: 1rem;
+        font-size: .9rem;
         text-decoration: none;
         color: whitesmoke;
         display: flex;
@@ -66,8 +66,8 @@
     
     #nav-bar .nav-btn img{
         margin: 0 0 0 .5rem;
-        width: 20px;
-        height: 20px;
+        width: 17px;
+        height: 17px;
     }
     
     #nav-bar .nav-btn input{
@@ -77,6 +77,7 @@
         border: 1px solid;
         border-radius: .2rem;
         margin: 0 0 0 1.5rem;
+        font-size: .7rem;
     }
     #hero{
         display: flex;
@@ -85,14 +86,16 @@
     }
     
     #hero .hero-text{
-        width: 50rem;
-        margin: 4%;
+        margin:  0 0 0 2rem;
+        padding: 1rem;
     }
     
     #hero .hero-text h1{
-        font-size: 2.4rem;
-        word-spacing: .7rem;
+        font-size: 1.73rem;
+        word-spacing: .5rem;
+        letter-spacing: .1rem;
         margin: .2rem 0 0 0;
+        width: 30rem;
     }
     
     #hero .hero-text h1 span{
@@ -100,10 +103,11 @@
     }
     
     #hero .hero-text p{
-        width: 28rem;
-        font-size: 1.1rem;
+        width: 22rem;
+        font-size: .8rem;
         margin: .8rem 0;
         line-height: 1.4rem;
+        word-spacing: .2rem;
         color: rgb(145, 147, 147);
     }
     
@@ -111,22 +115,27 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 25rem;
+        width: 20rem;
         background-color: white;
         border-radius: .3rem;
         box-shadow: 0 0 .6rem .5rem rgb(239, 238, 238);
-        padding: .8rem;
+        padding: .5rem;
     }
     
     #hero .search-con{
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 12.5rem;
+        width: 9rem;
+    }
+
+    #hero .search-con img{
+        width: 15px;
+        height: 15px;
     }
     
     #hero .search-con input{
-        font-size: .9rem;
+        font-size: .7rem;
         color: rgb(156, 156, 156);
         border: transparent;
         background-color: transparent;
@@ -134,117 +143,129 @@
     
     #hero .hero-right{
         background-color: rgb(26, 1, 43);
-        height: 100vh;
-        width: 70%;
+        height: 80vh;
+        width: 50rem;
+        position: absolute;
+        left: 53.5%;
+        z-index: -1;
     }
     
     #hero .hero-right .orange{
-        width: 8rem;
-        height: 8rem;
+        width: 6rem;
+        height: 6rem;
         border-radius: 50%;
         background-color: rgb(252, 251, 244);
         position: absolute;
-        top: 18%;
-        right: 20%;
+        top: 20%;
+        left: 20%;
         padding: 1.5rem;
     }
     
     #hero .hero-right .orange img{
-        width: 5rem;
-        height: 5rem;
+        width: 3rem;
+        height: 3rem;
     }
     
-    #hero .hero-right .blue{
-        width: 8rem;
-        height: 8rem;
+    #hero .blue{
+        width: 5.5rem;
+        height: 5.5rem;
         border-radius: 50%;
-        background-color: rgb(255, 255, 253);
+        background-color: white;
+        box-shadow: 0 0 .5rem .1rem rgb(59, 59, 59);
         position: absolute;
-        top: 42%;
-        right: 5%;
+        top: 30%;
+        right: 42%;
+        z-index: 1;
         padding: 1.5rem;
     }
     
-    #hero .hero-right .blue img{
-        width: 5rem;
-        height: 5rem;
+    #hero .blue img{
+        width: 2.5rem;
+        height: 2.5rem;
     }
     
     #hero .hero-right .sea-blue{
-        width: 8rem;
-        height: 8rem;
+        width: 5rem;
+        height: 5rem;
         border-radius: 50%;
         background-color: rgb(235, 244, 249);
         position: absolute;
-        top: 62%;
-        right: 26%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 72%;
+        left: 14%;
         padding: 1.5rem;
     }
     
     #hero .hero-right .sea-blue img{
-        width: 5rem;
-        height: 5rem;
+        width: 3rem;
+        height: 3rem;
     }
     
     #hero .hero-right .cream{
-        width: 8rem;
-        height: 8rem;
+        width: 5.3rem;
+        height: 5.3rem;
         border-radius: 50%;
         background-color: rgb(248, 243, 238);
         position: absolute;
-        top: 38%;
-        right: 44%;
+        top: 50%;
+        right: 50%;
         padding: 1.5rem;
         box-shadow: 0 .3rem .4rem 0 rgb(115, 114, 114);
     }
     
     #hero .hero-right .cream img{
-        width: 5rem;
-        height: 5rem;
+        width: 2.5rem;
+        height: 2.5rem;
     }
     
     #about{
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        margin: 9rem 0 0 0;
+        margin: 6rem 0 0 0;
     }
     
     #about .abt-img img{
-        width: 400px;
-        height: 300px;
+        width: 300px;
+        height: 230px;
     }
     
     #about .abt-text h2{
-        width: 20rem;
-        font-size: 1.8rem;
+        width: 15rem;
+        font-size: 1.12rem;
+        font-weight: 600;
+        letter-spacing: .1rem;
+        word-spacing: .1rem;
     }
     
     #about .abt-text p{
-        width: 485px;
-        font-size: 1.1rem;
-        margin: .9rem 0;
-        line-height: 1.7rem;
+        width: 344px;
+        font-size: .8rem;
+        margin: .5rem 0;
+        line-height: 1.4rem;
         color: rgb(145, 147, 147);
     }
     
     #about .abt-text input{
-        padding: .7rem 1rem;
-        margin: 1rem 0 0 0;
-        width: 9rem;
+        padding: .6rem .7rem;
+        margin: .7rem 0 0 0;
+        width: 7rem;
         border: transparent;
         border-radius: 2rem;
         background-color: rgb(214, 20, 20);
         color: white;
+        font-size: .64rem;
     }
     
     #course{
-        margin: 4rem 0 5rem 0;
+        margin: 4.5rem 0 5rem 0;
     }
     
     #course h2{
         text-align: center;
-        font-size: 1.8rem;
+        font-size: 1.2rem;
         margin: 0 0 0 0;
     }
     
@@ -252,11 +273,12 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        padding: 1rem;
     }
     
     #course .container{
         width: fit-content;
-        height: 22.5rem;
+        height: 18rem;
         box-shadow: 0 0 .7rem .3rem rgb(236, 236, 236);
         text-align: center;
         padding: 2rem .5rem 0 .5rem;
@@ -266,72 +288,76 @@
     
     #course #container{
         width: fit-content;
-        height: 22.5rem;
+        height: 18rem;
         box-shadow: 0 0 .7rem .3rem rgb(236, 236, 236);
         text-align: center;
         padding: 2rem .5rem 0 .5rem;
-        margin: 10rem 1.5rem 0 1.5rem;
+        margin: 6rem 1.5rem 0 1.5rem;
         border-radius: .6rem;
     }
     
     #course .container img{
-        width: 80px;
-        height: 80px;
+        width: 50px;
+        height: 50px;
     }
     
     #course #container img{
-        width: 80px;
-        height: 80px;
+        width: 50px;
+        height: 50px;
     }
     
     #course .container h3{
-        font-size: 1.5rem;
+        font-size: 1rem;
         word-spacing: .2rem;
         margin: 1.7rem 0 .8rem 0;
     }
     
     #course #container h3{
-        font-size: 1.5rem;
+        font-size: 1rem;
         word-spacing: .2rem;
-        margin: 1.7rem 0 .8rem 0;
+        margin: 1.3rem 0 .8rem 0;
     }
     
     #course .container p{
-        width: 18rem;
-        line-height: 2.3rem;
+        width: 12rem;
+        line-height: 1.6rem;
         margin: .8rem;
-        font-size: 1.2rem;
+        font-size: .8rem;
         color: rgb(145, 147, 147);
     }
     
     #course #container p{
-        width: 18rem;
-        line-height: 2.3rem;
+        width: 12rem;
+        line-height: 1.6rem;
         margin: .8rem;
-        font-size: 1.2rem;
+        font-size: .8rem;
         color: rgb(145, 147, 147);
     }
     
     #course .container a{
         color: rgb(214, 20, 20);
+        font-size: .8rem;
     }
     
     #course #container a{
+        font-size: .8rem;
         color: rgb(214, 20, 20);
     }
     
     #testimonial{
-        margin: 6rem 0 4rem 0;
+        margin: 5rem 0 4rem 0;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
     
     #testimonial h2{
-        font-size: 1.8rem;
-        width: 15rem;
+        font-size: 1.24rem;
+        font-weight: 600;
+        width: 12rem;
         text-align: center;
-        word-spacing: .2rem;
+        word-spacing: .1rem;
+        letter-spacing: .1rem;
     }
     
     #testimonial .test-contain{
@@ -342,40 +368,40 @@
     #testimonial .testimonials{
         width: fit-content;
         height: fit-content;
-        padding: 2rem;
+        padding: 1.5rem;
         box-shadow: 0 0 1rem .5rem rgb(231, 230, 230);
-        margin: 5rem .7rem 3rem .7rem;
+        margin: 4rem .7rem 3rem .7rem;
     }
     
     #testimonial .testimonials-img{
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 14.8rem;
+        width: 9.5rem;
     }
     
     #testimonial .testimonials-img img{
         border-radius: 50%;
-        width: 70px;
-        height: 70px;
+        width: 40px;
+        height: 40px;
     }
     
     #testimonial .testimonials-img h4{
-        font-size: 1.2rem;
+        font-size: .8rem;
     }
     
     #testimonial .testimonials p{
-        width: 20rem;
-        font-size: 1.1rem;
+        width: 14rem;
+        font-size: .8rem;
         color: rgb(145, 147, 147);
-        line-height: 1.5rem;
-        margin: .9rem 0;
+        line-height: 1.3rem;
+        margin: .7rem 0;
     }
     
-    /* #testimonial .testimonials .stars{
-        height: 50px;
-        width: 68px;
-    } */
+    #testimonial .testimonials .stars{
+       font-size: .6rem;
+       color: gold;
+    }
     
     #footer{
         display: flex;
@@ -387,23 +413,23 @@
     #footer .foot-logo .logo-contain{
         display: flex;
         align-items: center;
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
     
     #footer .foot-logo p{
-        width: 15.7rem;
-        font-size: 1.1rem;
-        line-height: 1.8rem;
-        margin: .9rem 0;
+        width: 11.4rem;
+        font-size: .8rem;
+        line-height: 1.4rem;
+        margin: .2rem 0;
     }
     
     #footer .foot-links, .foot-offers{
-        margin: 0 5em 0 5rem;
+        margin: 0 4rem 0 4rem;
     }
     
     #footer h4{
-        font-size: 1.2rem;
-        margin: 0 0 1.5rem 0;
+        font-size: .9rem;
+        margin: 1.5rem 0 1.5rem 0;
     }
     
     #footer ul{
@@ -412,9 +438,9 @@
     
     #footer a{
         text-decoration: none;
-        line-height: 2rem;
+        line-height: 1.7rem;
         color: rgb(225, 225, 225);
-        font-size: 1.1rem;
+        font-size: .8rem;
     }
 }
 
