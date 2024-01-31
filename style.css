@@ -5,19 +5,833 @@
     overflow-x: hidden;
 }
 
+#nav-bar{
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    justify-content: space-between;
+    background-color: transparent;
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+}
+
+.nav-contain{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 30.5rem;
+}
+
+#nav-bar .logo-contain{
+    display: flex;
+    align-items: center;
+}
+
+#nav-bar .logo-text{
+    font-size: 1rem;
+    color: #CF0D0D;
+}
+
+#nav-bar .nav-list ul{
+    display: flex;
+    list-style-type: none;
+}
+
+#nav-bar .nav-list li{
+    padding-inline: .6rem;
+}
+
+#nav-bar .nav-list a{
+    text-decoration: none;
+    color: black;
+    font-size: .9rem;
+}
+
+#nav-bar .nav-btn{
+    display: flex;
+}
+
+#nav-bar .nav-btn a{
+    font-size: .9rem;
+    text-decoration: none;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+}
+
+#nav-bar .nav-btn img{
+    margin: 0 0 0 .5rem;
+    width: 17px;
+    height: 17px;
+}
+
+#nav-bar .nav-btn input{
+    padding: .6rem;
+    background-color: white;
+    color: black;
+    border: 1px solid;
+    border-radius: .2rem;
+    margin: 0 0 0 1.5rem;
+    font-size: .7rem;
+}
+#hero{
+    display: flex;
+        align-items: center;
+        height: 100vh;
+        background: linear-gradient(to right,white 0%, white 50%, rgb(26, 1, 43) 50%, rgb(26, 1, 43) 100%);
+}
+
+#hero .hero-text{
+    margin:  0 0 0 2rem;
+    padding: 1rem;
+}
+
+#hero .hero-text h1{
+    font-size: 1.73rem;
+    word-spacing: .5rem;
+    letter-spacing: .1rem;
+    margin: .2rem 0 0 0;
+    width: 30rem;
+}
+
+#hero .hero-text h1 span{
+    color: rgb(214, 20, 20);
+}
+
+#hero .hero-text p{
+    width: 22rem;
+    font-size: .8rem;
+    margin: .8rem 0;
+    line-height: 1.4rem;
+    word-spacing: .2rem;
+    color: rgb(145, 147, 147);
+}
+
+#hero .hero-search{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 20rem;
+    background-color: white;
+    border-radius: .3rem;
+    box-shadow: 0 0 .6rem .5rem rgb(239, 238, 238);
+    padding: .5rem;
+}
+
+#hero .search-con{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 9rem;
+}
+
+#hero .search-con img{
+    width: 15px;
+    height: 15px;
+}
+
+#hero .search-con input{
+    font-size: .7rem;
+    color: rgb(156, 156, 156);
+    border: transparent;
+    background-color: transparent;
+}
+
+#hero .orange img{
+    width: 6.5rem;
+    height: 6.5rem;
+    object-fit: contain;
+    border-radius: 50%;
+    position: absolute;
+    top: 25%;
+    right: 19%;
+}
+
+#hero .blue img{
+    width: 5.9rem;
+    height: 5.9rem;
+    object-fit: contain;
+    position: absolute;
+    top: 36%;
+    right: 46%;
+    border-radius: 50%;
+    box-shadow: 0 0 .5rem .1rem rgb(59, 59, 59);
+}
+
+#hero .sea-blue img{
+    width: 5.5rem;
+    height: 5.5rem;
+    object-fit: contain;
+    border-radius: 50%;
+    top: 79%;
+    right: 30%;
+    position: absolute;
+}
+
+#hero .cream img{
+    width: 7rem;
+    height: 7rem;
+    object-fit: contain;
+    border-radius: 50%;
+    top: 58%;
+    right: 4%;
+    position: absolute;
+    box-shadow: 0 .3rem .4rem 0 rgb(115, 114, 114);
+}
+
+#about{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 6rem 0 0 0;
+}
+
+#about .abt-img img{
+    width: 400px;
+    height: 300px;
+}
+
+#about .abt-text h2{
+    width: 20rem;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    word-spacing: .1rem;
+}
+
+#about .abt-text p{
+    width: 433px;
+    font-size: 16px;
+    margin: .5rem 0;
+    line-height: 1.4rem;
+    color: rgb(145, 147, 147);
+}
+
+#about .abt-text input{
+    padding: .6rem .7rem;
+    margin: .7rem 0 0 0;
+    width: 8rem;
+    border: transparent;
+    border-radius: 2rem;
+    background-color: rgb(214, 20, 20);
+    color: white;
+    font-size: .83rem;
+}
+
+#course{
+    margin: 5rem 0 5rem 0;
+}
+
+#course h2{
+    text-align: center;
+    font-size: 25px;
+    margin: 0 0 0 0;
+}
+
+#course .course-contain{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+#course .container{
+    width: fit-content;
+    height: 21rem;
+    box-shadow: 0 0 .7rem .3rem rgb(236, 236, 236);
+    text-align: center;
+    padding: 2rem .5rem 1rem .5rem;
+    margin: 0 1.5rem;
+    border-radius: .6rem;
+}
+
+#course #container{
+    width: fit-content;
+    height: 21rem;
+    box-shadow: 0 0 .7rem .3rem rgb(236, 236, 236);
+    text-align: center;
+    padding: 2rem .5rem 1rem .5rem;
+    margin: 7rem 1.5rem 0 1.5rem;
+    border-radius: .6rem;
+}
+
+#course .container img{
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
+
+#course #container img{
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
+
+#course .container h3{
+    font-size: 1.3rem;
+    word-spacing: .2rem;
+    margin: 1.7rem 0 .8rem 0;
+}
+
+#course #container h3{
+    font-size: 1.3rem;
+    word-spacing: .2rem;
+    margin: 1.3rem 0 .8rem 0;
+}
+
+#course .container p{
+    width: 14rem;
+    line-height: 1.6rem;
+    margin: .8rem;
+    font-size: 15px;
+    color: rgb(145, 147, 147);
+}
+
+#course #container p{
+    width: 14rem;
+    line-height: 1.6rem;
+    margin: .8rem;
+    font-size: 15px;
+    color: rgb(145, 147, 147);
+}
+
+#course .container a{
+    color: rgb(214, 20, 20);
+    font-size: .9rem;
+}
+
+#course #container a{
+    font-size: .9rem;
+    color: rgb(214, 20, 20);
+}
+
+#testimonial{
+    margin: 7rem 0 4rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#testimonial h2{
+    font-size: 25px;
+    font-weight: 600;
+    width: 15rem;
+    text-align: center;
+    word-spacing: .1rem;
+    letter-spacing: .1rem;
+}
+
+#testimonial .test-contain{
+    display: flex;
+    align-items: center;
+}
+
+#testimonial .testimonials{
+    width: fit-content;
+    height: fit-content;
+    padding: 1.5rem;
+    box-shadow: 0 0 1rem .5rem rgb(231, 230, 230);
+    margin: 4rem .7rem 3rem .7rem;
+}
+
+#testimonial .testimonials-img{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 13rem;
+}
+
+#testimonial .testimonials-img img{
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+
+#testimonial .testimonials-img h4{
+    font-size: 16px;
+}
+
+#testimonial .testimonials p{
+    width: 16rem;
+    font-size: 15px;
+    color: rgb(145, 147, 147);
+    line-height: 1.3rem;
+    margin: .7rem 0;
+}
+
+#testimonial .testimonials .stars{
+   font-size: .7rem;
+   color: gold;
+}
+
+#footer{
+    display: flex;
+    padding: 3rem 3rem 3rem 6rem;
+    background-color: rgb(26, 1, 43);
+    color: rgb(225, 225, 225);
+    justify-content: center;
+}
+    
+#footer .foot-logo .logo-contain{
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+}
+    
+#footer .foot-logo p{
+    width: 14rem;
+    font-size: 16px;
+    line-height: 2rem;
+    margin: .2rem 0;
+}
+    
+#footer .foot-links, .foot-offers{
+    margin: 0 4rem 0 4rem;
+}
+    
+#footer h4{
+    font-size: 18px;
+    margin: 1.5rem 0 1.5rem 0;
+}
+    
+#footer ul{
+    list-style-type: none;
+}
+    
+#footer a{
+    text-decoration: none;
+    line-height: 2rem;
+    color: rgb(225, 225, 225);
+    font-size: 16px;
+}
+
 /* Media Queries */
 
-/* For laptop */
-@media screen and (max-width: 1024px) {
+/* For Desktop */
+@media screen and (min-width: 1281px){
+   
     #nav-bar{
         display: flex;
         align-items: center;
-        padding: 1rem 2rem;
+        padding: .5rem 3rem;
         justify-content: space-between;
         background-color: transparent;
         position: fixed;
         z-index: 3;
         width: 100%;
+        backdrop-filter: blur(20px);
+    }
+
+    .nav-contain{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 34.5rem;
+    }
+    
+    #nav-bar .logo-contain{
+        display: flex;
+        align-items: center;
+    }
+
+    #nav-bar .logo-contain .logo img{
+        width: 60px;
+        height: 60px;
+    }
+    
+    #nav-bar .logo-text{
+        font-size: 1rem;
+        color: #CF0D0D;
+    }
+    
+    #nav-bar .nav-list ul{
+        display: flex;
+        list-style-type: none;
+    }
+    
+    #nav-bar .nav-list li{
+        padding-inline: .9rem;
+    }
+    
+    #nav-bar .nav-list a{
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+    }
+    
+    #nav-bar .nav-btn{
+        display: flex;
+    }
+    
+    #nav-bar .nav-btn a{
+        font-size: 18px;
+        text-decoration: none;
+        color: whitesmoke;
+        display: flex;
+        align-items: center;
+    }
+    
+    #nav-bar .nav-btn img{
+        margin: 0 0 0 .5rem;
+        width: 18px;
+        height: 18px;
+    }
+    
+    #nav-bar .nav-btn input{
+        padding: .6rem;
+        background-color: white;
+        color: black;
+        border: 1px solid;
+        border-radius: .2rem;
+        margin: 0 0 0 1.5rem;
+        font-size: 14px;
+    }
+    #hero{
+        display: flex;
+        align-items: center;
+        height: 100vh;
+        background: linear-gradient(to right,white 0%, white 50%, rgb(26, 1, 43) 50%, rgb(26, 1, 43) 100%);
+    }
+    
+    #hero .hero-text{
+        margin:  0 0 0 2rem;
+        padding: 1rem;
+        z-index: 1;
+    }
+    
+    #hero .hero-text h1{
+        font-size: 2.5rem;
+        word-spacing: .5rem;
+        letter-spacing: .1rem;
+        margin: .2rem 0 0 0;
+        width: 30rem;
+    }
+    
+    #hero .hero-text h1 span{
+        color: rgb(214, 20, 20);
+    }
+    
+    #hero .hero-text p{
+        width: 28rem;
+        font-size: 17px;
+        margin: .8rem 0;
+        line-height: 1.4rem;
+        word-spacing: .2rem;
+        color: rgb(145, 147, 147);
+    }
+    
+    #hero .hero-search{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 25rem;
+        background-color: white;
+        border-radius: .3rem;
+        box-shadow: 0 0 .6rem .5rem rgb(239, 238, 238);
+        padding: .5rem;
+    }
+    
+    #hero .search-con{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 11.5rem;
+    }
+
+    #hero .search-con img{
+        width: 20px;
+        height: 20px;
+    }
+    
+    #hero .search-con input{
+        font-size: .85rem;
+        color: rgb(156, 156, 156);
+        border: transparent;
+        background-color: transparent;
+    }
+    
+    #hero .orange img{
+        width: 6.5rem;
+        height: 6.5rem;
+        object-fit: contain;
+        border-radius: 50%;
+        position: absolute;
+        top: 25%;
+        right: 19%;
+    }
+    
+    #hero .blue img{
+        width: 5.9rem;
+        height: 5.9rem;
+        object-fit: contain;
+        position: absolute;
+        top: 36%;
+        right: 46%;
+        border-radius: 50%;
+        box-shadow: 0 0 .5rem .1rem rgb(59, 59, 59);
+    }
+    
+    #hero .sea-blue img{
+        width: 5.5rem;
+        height: 5.5rem;
+        object-fit: contain;
+        border-radius: 50%;
+        top: 79%;
+        right: 30%;
+        position: absolute;
+    }
+    
+    #hero .cream img{
+        width: 7rem;
+        height: 7rem;
+        object-fit: contain;
+        border-radius: 50%;
+        top: 58%;
+        right: 4%;
+        position: absolute;
+        box-shadow: 0 .3rem .4rem 0 rgb(115, 114, 114);
+    }
+    
+    #about{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 7rem 0 0 0;
+    }
+    
+    #about .abt-img img{
+        width: 500px;
+        height: 350px;
+    }
+    
+    #about .abt-text h2{
+        width: 23rem;
+        font-size: 28px;
+        font-weight: 600;
+        letter-spacing: .1rem;
+        word-spacing: .1rem;
+    }
+    
+    #about .abt-text p{
+        width: 460px;
+        font-size: 17px;
+        margin: .5rem 0;
+        line-height: 1.4rem;
+        color: rgb(145, 147, 147);
+    }
+    
+    #about .abt-text input{
+        padding: .6rem .7rem;
+        margin: .7rem 0 0 0;
+        width: 9rem;
+        border: transparent;
+        border-radius: 2rem;
+        background-color: rgb(214, 20, 20);
+        color: white;
+        font-size: .9rem;
+    }
+    
+    #course{
+        margin: 5rem 0 5rem 0;
+    }
+    
+    #course h2{
+        text-align: center;
+        font-size: 25px;
+        margin: 0 0 0 0;
+    }
+    
+    #course .course-contain{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+    }
+    
+    #course .container{
+        width: fit-content;
+        height: 21.5rem;
+        box-shadow: 0 0 .7rem .3rem rgb(236, 236, 236);
+        text-align: center;
+        padding: 2rem .5rem 1rem .5rem;
+        margin: 0 1.5rem;
+        border-radius: .6rem;
+    }
+    
+    #course #container{
+        width: fit-content;
+        height: 21rem;
+        box-shadow: 0 0 .7rem .3rem rgb(236, 236, 236);
+        text-align: center;
+        padding: 2rem .5rem 1rem .5rem;
+        margin: 9rem 1.5rem 0 1.5rem;
+        border-radius: .6rem;
+    }
+    
+    #course .container img{
+        width: 85px;
+        height: 90px;
+        object-fit: contain;
+    }
+    
+    #course #container img{
+        width: 70px;
+        height: 70px;
+        object-fit: contain;
+    }
+    
+    #course .container h3{
+        font-size: 1.5rem;
+        word-spacing: .2rem;
+        margin: 1.4rem 0 .8rem 0;
+    }
+    
+    #course #container h3{
+        font-size: 1.5rem;
+        word-spacing: .2rem;
+        margin: 1.4rem 0 .8rem 0;
+    }
+    
+    #course .container p{
+        width: 16rem;
+        line-height: 1.6rem;
+        margin: .8rem;
+        font-size: 17px;
+        color: rgb(145, 147, 147);
+    }
+    
+    #course #container p{
+        width: 16rem;
+        line-height: 1.6rem;
+        margin: .8rem;
+        font-size: 17px;
+        color: rgb(145, 147, 147);
+    }
+    
+    #course .container a{
+        color: rgb(214, 20, 20);
+        font-size: 1rem;
+    }
+    
+    #course #container a{
+        font-size: 1rem;
+        color: rgb(214, 20, 20);
+    }
+    
+    #testimonial{
+        margin: 7rem 0 4rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #testimonial h2{
+        font-size: 28px;
+        font-weight: 600;
+        width: 17rem;
+        text-align: center;
+        word-spacing: .1rem;
+        letter-spacing: .1rem;
+    }
+    
+    #testimonial .test-contain{
+        display: flex;
+        align-items: center;
+    }
+    
+    #testimonial .testimonials{
+        width: fit-content;
+        height: fit-content;
+        padding: 1.5rem;
+        box-shadow: 0 0 1rem .5rem rgb(231, 230, 230);
+        margin: 4rem .7rem 3rem .7rem;
+    }
+    
+    #testimonial .testimonials-img{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 15rem;
+    }
+    
+    #testimonial .testimonials-img img{
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+    }
+    
+    #testimonial .testimonials-img h4{
+        font-size: 19px;
+    }
+    
+    #testimonial .testimonials p{
+        width: 17rem;
+        font-size: 16px;
+        color: rgb(145, 147, 147);
+        line-height: 1.3rem;
+        margin: .7rem 0;
+    }
+    
+    #testimonial .testimonials .stars{
+       font-size: .8rem;
+       color: gold;
+    }
+    
+    #footer{
+        display: flex;
+        padding: 3rem 3rem 3rem 6rem;
+        background-color: rgb(26, 1, 43);
+        color: rgb(225, 225, 225);
+        justify-content: center;
+    }
+    
+    #footer .foot-logo .logo-contain{
+        display: flex;
+        align-items: center;
+        font-size: 1.1rem;
+    }
+    
+    #footer .foot-logo p{
+        width: 14rem;
+        font-size: 17px;
+        line-height: 2rem;
+        margin: .2rem 0;
+    }
+    
+    #footer .foot-links, .foot-offers{
+        margin: 0 4rem 0 4rem;
+    }
+    
+    #footer h4{
+        font-size: 19px;
+        margin: 1.5rem 0 1.5rem 0;
+    }
+    
+    #footer ul{
+        list-style-type: none;
+    }
+    
+    #footer a{
+        text-decoration: none;
+        line-height: 2rem;
+        color: rgb(225, 225, 225);
+        font-size: 17px;
+    }
+}
+
+/* For laptop */
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+    #nav-bar{
+        display: flex;
+        align-items: center;
+        padding: .5rem 2rem;
+        justify-content: space-between;
+        background-color: transparent;
+        position: fixed;
+        z-index: 3;
+        width: 100%;
+        backdrop-filter: blur(20px);
     }
 
     .nav-contain{
@@ -31,9 +845,14 @@
         display: flex;
         align-items: center;
     }
+
+    #nav-bar .logo-contain .logo img{
+        width: 50px;
+        height: 50px;
+    }
     
     #nav-bar .logo-text{
-        font-size: 1rem;
+        font-size: .9rem;
         color: #CF0D0D;
     }
     
@@ -49,7 +868,7 @@
     #nav-bar .nav-list a{
         text-decoration: none;
         color: black;
-        font-size: .9rem;
+        font-size: 16px;
     }
     
     #nav-bar .nav-btn{
@@ -57,7 +876,7 @@
     }
     
     #nav-bar .nav-btn a{
-        font-size: .9rem;
+        font-size: 16px;
         text-decoration: none;
         color: whitesmoke;
         display: flex;
@@ -77,21 +896,23 @@
         border: 1px solid;
         border-radius: .2rem;
         margin: 0 0 0 1.5rem;
-        font-size: .7rem;
+        font-size: 14px;
     }
     #hero{
         display: flex;
         align-items: center;
-        height: 80vh;
+        height: 100vh;
+        background: linear-gradient(to right,white 0%, white 50%, rgb(26, 1, 43) 50%, rgb(26, 1, 43) 100%);
     }
     
     #hero .hero-text{
         margin:  0 0 0 2rem;
         padding: 1rem;
+        z-index: 1;
     }
     
     #hero .hero-text h1{
-        font-size: 1.73rem;
+        font-size: 2rem;
         word-spacing: .5rem;
         letter-spacing: .1rem;
         margin: .2rem 0 0 0;
@@ -103,8 +924,8 @@
     }
     
     #hero .hero-text p{
-        width: 22rem;
-        font-size: .8rem;
+        width: 25rem;
+        font-size: 16px;
         margin: .8rem 0;
         line-height: 1.4rem;
         word-spacing: .2rem;
@@ -115,7 +936,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 20rem;
+        width: 24rem;
         background-color: white;
         border-radius: .3rem;
         box-shadow: 0 0 .6rem .5rem rgb(239, 238, 238);
@@ -126,98 +947,61 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 9rem;
+        width: 11rem;
     }
 
     #hero .search-con img{
-        width: 15px;
-        height: 15px;
+        width: 20px;
+        height: 20px;
     }
     
     #hero .search-con input{
-        font-size: .7rem;
+        font-size: .8rem;
         color: rgb(156, 156, 156);
         border: transparent;
         background-color: transparent;
     }
     
-    #hero .hero-right{
-        background-color: rgb(26, 1, 43);
-        height: 80vh;
-        width: 50rem;
-        position: absolute;
-        left: 53.5%;
-        z-index: -1;
-    }
-    
-    #hero .hero-right .orange{
-        width: 6rem;
-        height: 6rem;
+    #hero .orange img{
+        width: 6.5rem;
+        height: 6.5rem;
+        object-fit: contain;
         border-radius: 50%;
-        background-color: rgb(252, 251, 244);
         position: absolute;
-        top: 20%;
-        left: 20%;
-        padding: 1.5rem;
-    }
-    
-    #hero .hero-right .orange img{
-        width: 3rem;
-        height: 3rem;
-    }
-    
-    #hero .blue{
-        width: 5.5rem;
-        height: 5.5rem;
-        border-radius: 50%;
-        background-color: white;
-        box-shadow: 0 0 .5rem .1rem rgb(59, 59, 59);
-        position: absolute;
-        top: 30%;
-        right: 42%;
-        z-index: 1;
-        padding: 1.5rem;
+        top: 25%;
+        right: 19%;
     }
     
     #hero .blue img{
-        width: 2.5rem;
-        height: 2.5rem;
-    }
-    
-    #hero .hero-right .sea-blue{
-        width: 5rem;
-        height: 5rem;
-        border-radius: 50%;
-        background-color: rgb(235, 244, 249);
+        width: 5.9rem;
+        height: 5.9rem;
+        object-fit: contain;
         position: absolute;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        top: 72%;
-        left: 14%;
-        padding: 1.5rem;
-    }
-    
-    #hero .hero-right .sea-blue img{
-        width: 3rem;
-        height: 3rem;
-    }
-    
-    #hero .hero-right .cream{
-        width: 5.3rem;
-        height: 5.3rem;
+        top: 36%;
+        right: 46%;
         border-radius: 50%;
-        background-color: rgb(248, 243, 238);
+        box-shadow: 0 0 .5rem .1rem rgb(59, 59, 59);
+    }
+    
+    #hero .sea-blue img{
+        width: 5.5rem;
+        height: 5.5rem;
+        object-fit: contain;
+        border-radius: 50%;
+        top: 79%;
+        right: 30%;
         position: absolute;
-        top: 50%;
-        right: 50%;
-        padding: 1.5rem;
+    }
+    
+    #hero .cream img{
+        width: 7rem;
+        height: 7rem;
+        object-fit: contain;
+        border-radius: 50%;
+        top: 58%;
+        right: 4%;
+        position: absolute;
         box-shadow: 0 .3rem .4rem 0 rgb(115, 114, 114);
-    }
-    
-    #hero .hero-right .cream img{
-        width: 2.5rem;
-        height: 2.5rem;
     }
     
     #about{
@@ -228,21 +1012,21 @@
     }
     
     #about .abt-img img{
-        width: 300px;
-        height: 230px;
+        width: 400px;
+        height: 300px;
     }
     
     #about .abt-text h2{
-        width: 15rem;
-        font-size: 1.12rem;
+        width: 20rem;
+        font-size: 22px;
         font-weight: 600;
         letter-spacing: .1rem;
         word-spacing: .1rem;
     }
     
     #about .abt-text p{
-        width: 344px;
-        font-size: .8rem;
+        width: 433px;
+        font-size: 16px;
         margin: .5rem 0;
         line-height: 1.4rem;
         color: rgb(145, 147, 147);
@@ -251,21 +1035,21 @@
     #about .abt-text input{
         padding: .6rem .7rem;
         margin: .7rem 0 0 0;
-        width: 7rem;
+        width: 8rem;
         border: transparent;
         border-radius: 2rem;
         background-color: rgb(214, 20, 20);
         color: white;
-        font-size: .64rem;
+        font-size: .83rem;
     }
     
     #course{
-        margin: 4.5rem 0 5rem 0;
+        margin: 5rem 0 5rem 0;
     }
     
     #course h2{
         text-align: center;
-        font-size: 1.2rem;
+        font-size: 25px;
         margin: 0 0 0 0;
     }
     
@@ -278,83 +1062,85 @@
     
     #course .container{
         width: fit-content;
-        height: 18rem;
+        height: 21rem;
         box-shadow: 0 0 .7rem .3rem rgb(236, 236, 236);
         text-align: center;
-        padding: 2rem .5rem 0 .5rem;
+        padding: 2rem .5rem 1rem .5rem;
         margin: 0 1.5rem;
         border-radius: .6rem;
     }
     
     #course #container{
         width: fit-content;
-        height: 18rem;
+        height: 21rem;
         box-shadow: 0 0 .7rem .3rem rgb(236, 236, 236);
         text-align: center;
-        padding: 2rem .5rem 0 .5rem;
-        margin: 6rem 1.5rem 0 1.5rem;
+        padding: 2rem .5rem 1rem .5rem;
+        margin: 7rem 1.5rem 0 1.5rem;
         border-radius: .6rem;
     }
     
     #course .container img{
-        width: 50px;
-        height: 50px;
+        width: 70px;
+        height: 70px;
+        object-fit: contain;
     }
     
     #course #container img{
-        width: 50px;
-        height: 50px;
+        width: 70px;
+        height: 70px;
+        object-fit: contain;
     }
     
     #course .container h3{
-        font-size: 1rem;
+        font-size: 1.3rem;
         word-spacing: .2rem;
         margin: 1.7rem 0 .8rem 0;
     }
     
     #course #container h3{
-        font-size: 1rem;
+        font-size: 1.3rem;
         word-spacing: .2rem;
         margin: 1.3rem 0 .8rem 0;
     }
     
     #course .container p{
-        width: 12rem;
+        width: 14rem;
         line-height: 1.6rem;
         margin: .8rem;
-        font-size: .8rem;
+        font-size: 15px;
         color: rgb(145, 147, 147);
     }
     
     #course #container p{
-        width: 12rem;
+        width: 14rem;
         line-height: 1.6rem;
         margin: .8rem;
-        font-size: .8rem;
+        font-size: 15px;
         color: rgb(145, 147, 147);
     }
     
     #course .container a{
         color: rgb(214, 20, 20);
-        font-size: .8rem;
+        font-size: .9rem;
     }
     
     #course #container a{
-        font-size: .8rem;
+        font-size: .9rem;
         color: rgb(214, 20, 20);
     }
     
     #testimonial{
-        margin: 5rem 0 4rem 0;
+        margin: 7rem 0 4rem 0;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
     
     #testimonial h2{
-        font-size: 1.24rem;
+        font-size: 25px;
         font-weight: 600;
-        width: 12rem;
+        width: 15rem;
         text-align: center;
         word-spacing: .1rem;
         letter-spacing: .1rem;
@@ -377,29 +1163,29 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 9.5rem;
+        width: 13rem;
     }
     
     #testimonial .testimonials-img img{
         border-radius: 50%;
-        width: 40px;
-        height: 40px;
+        width: 60px;
+        height: 60px;
     }
     
     #testimonial .testimonials-img h4{
-        font-size: .8rem;
+        font-size: 16px;
     }
     
     #testimonial .testimonials p{
-        width: 14rem;
-        font-size: .8rem;
+        width: 16rem;
+        font-size: 15px;
         color: rgb(145, 147, 147);
         line-height: 1.3rem;
         margin: .7rem 0;
     }
     
     #testimonial .testimonials .stars{
-       font-size: .6rem;
+       font-size: .7rem;
        color: gold;
     }
     
@@ -408,6 +1194,7 @@
         padding: 3rem 3rem 3rem 6rem;
         background-color: rgb(26, 1, 43);
         color: rgb(225, 225, 225);
+        justify-content: center;
     }
     
     #footer .foot-logo .logo-contain{
@@ -417,9 +1204,9 @@
     }
     
     #footer .foot-logo p{
-        width: 11.4rem;
-        font-size: .8rem;
-        line-height: 1.4rem;
+        width: 14rem;
+        font-size: 16px;
+        line-height: 2rem;
         margin: .2rem 0;
     }
     
@@ -428,433 +1215,8 @@
     }
     
     #footer h4{
-        font-size: .9rem;
+        font-size: 18px;
         margin: 1.5rem 0 1.5rem 0;
-    }
-    
-    #footer ul{
-        list-style-type: none;
-    }
-    
-    #footer a{
-        text-decoration: none;
-        line-height: 1.7rem;
-        color: rgb(225, 225, 225);
-        font-size: .8rem;
-    }
-}
-
-/* For tablet below */
-@media screen and (max-width: 768px) {
-    #nav-bar{
-        display: flex;
-        align-items: center;
-        padding: .5rem 2rem;
-        justify-content: space-between;
-        background-color: transparent;
-        position: fixed;
-        z-index: 3;
-        width: 100%;
-    }
-
-    .nav-contain{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        /* width: 37rem; */
-    }
-    
-    #nav-bar .logo-contain{
-        display: flex;
-        align-items: center;
-    }
-    
-    #nav-bar .logo-text{
-        font-size: .9rem;
-        color: #CF0D0D;
-    }
-    
-    #nav-bar .nav-list ul{
-        display: flex;
-        list-style-type: none;
-    }
-    
-    #nav-bar .nav-list li{
-        padding-inline: .5rem;
-        display: none;
-    }
-    
-    #nav-bar .nav-list a{
-        text-decoration: none;
-        color: black;
-        font-size: .9rem;
-    }
-    
-    #nav-bar .nav-btn{
-        display: flex;
-    }
-    
-    #nav-bar .nav-btn a{
-        font-size: .9rem;
-        text-decoration: none;
-        color: whitesmoke;
-        display: flex;
-        align-items: center;
-    }
-    
-    #nav-bar .nav-btn img{
-        margin: 0 0 0 .5rem;
-        width: 18px;
-        height: 18px;
-    }
-    
-    #nav-bar .nav-btn input{
-        padding: .4rem;
-        background-color: white;
-        color: black;
-        border: 1px solid;
-        border-radius: .2rem;
-        margin: 0 0 0 1.3rem;
-    }
-
-    #hero{
-        display: flex;
-        align-items: center;
-        height: 80vh;
-    }
-    
-    #hero .hero-text{
-        width: 50rem;
-        margin: 7%;
-    }
-    
-    #hero .hero-text h1{
-        font-size: 1.6rem;
-        word-spacing: .3rem;
-        margin: .5rem 0 0 0;
-    }
-    
-    #hero .hero-text h1 span{
-        color: rgb(214, 20, 20);
-    }
-    
-    #hero .hero-text p{
-        width: 21rem;
-        font-size: .9rem;
-        margin: .6rem 0;
-        line-height: 1.4rem;
-        color: rgb(145, 147, 147);
-    }
-    
-    #hero .hero-search{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 20.7rem;
-        background-color: white;
-        border-radius: .3rem;
-        box-shadow: 0 0 .6rem .5rem rgb(239, 238, 238);
-        padding: .6rem;
-    }
-    
-    #hero .search-con{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 9.5rem;
-    }
-
-    #hero .search-con img{
-        width: 17px;
-        height: 17px;
-    }
-    
-    #hero .search-con input{
-        font-size: .7rem;
-        color: rgb(156, 156, 156);
-        border: transparent;
-        background-color: transparent;
-    }
-    
-    #hero .hero-right{
-        background-color: rgb(26, 1, 43);
-        height: 80vh;
-        width: 86%;
-    }
-    
-    #hero .hero-right .orange{
-        width: 5rem;
-        height: 5rem;
-        border-radius: 50%;
-        background-color: rgb(252, 251, 244);
-        position: absolute;
-        top: 17%;
-        right: 18%;
-        padding: 1.5rem;
-    }
-    
-    #hero .hero-right .orange img{
-        width: 2.5rem;
-        height: 2.5rem;
-    }
-    
-    #hero .hero-right .blue{
-        width: 5rem;
-        height: 5rem;
-        border-radius: 50%;
-        background-color: rgb(255, 255, 253);
-        position: absolute;
-        top: 42%;
-        right: 4%;
-        padding: 1.5rem;
-    }
-    
-    #hero .hero-right .blue img{
-        width: 2.5rem;
-        height: 2.5rem;
-    }
-    
-    #hero .hero-right .sea-blue{
-        width: 5rem;
-        height: 5rem;
-        border-radius: 50%;
-        background-color: rgb(235, 244, 249);
-        position: absolute;
-        top: 60%;
-        right: 22%;
-        padding: 1.5rem;
-    }
-    
-    #hero .hero-right .sea-blue img{
-        width: 2.5rem;
-        height: 2.5rem;
-    }
-    
-    #hero .hero-right .cream{
-        width: 5rem;
-        height: 5rem;
-        border-radius: 50%;
-        background-color: rgb(248, 243, 238);
-        position: absolute;
-        top: 38%;
-        right: 33%;
-        padding: 1.5rem;
-        box-shadow: 0 .3rem .4rem 0 rgb(115, 114, 114);
-    }
-    
-    #hero .hero-right .cream img{
-        width: 2.5rem;
-        height: 2.5rem;
-    }
-
-    #about{
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        margin: 4rem 0 0 0;
-    }
-    
-    #about .abt-img img{
-        width: 250px;
-        height: 200px;
-        margin: 0 0 0 5rem;
-    }
-    
-    #about .abt-text h2{
-        width: 16rem;
-        font-size: 1.2rem;
-        word-spacing: .3rem;
-        margin: 0 0 0 3rem;
-    }
-    
-    #about .abt-text p{
-        width: 390px;
-        font-size: .9rem;
-        line-height: 1.7rem;
-        color: rgb(145, 147, 147);
-        margin: .7rem 0 .7rem 3rem;
-    }
-    
-    #about .abt-text input{
-        padding: .6rem 1rem;
-        margin: .8rem 0 0 3rem;
-        font-size: .8rem;
-        width: 8rem;
-        border: transparent;
-        border-radius: 2rem;
-        background-color: rgb(214, 20, 20);
-        color: white;
-    }
-
-    #course{
-        margin: 3rem 0 5rem 0;
-    }
-    
-    #course h2{
-        text-align: center;
-        font-size: 1.2rem;
-        margin: 0 0 0 0;
-    }
-    
-    #course .course-contain{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    #course .container{
-        width: fit-content;
-        height: 19rem;
-        box-shadow: 0 0 .7rem .3rem rgb(236, 236, 236);
-        text-align: center;
-        padding: 2rem .5rem 0 .5rem;
-        margin: 0 1.5rem;
-        border-radius: .6rem;
-    }
-    
-    #course #container{
-        width: fit-content;
-        height: 19rem;
-        box-shadow: 0 0 .7rem .3rem rgb(236, 236, 236);
-        text-align: center;
-        justify-content: center;
-        padding: 2rem .5rem 0 .5rem;
-        margin: 6rem 0 1rem 0;
-        border-radius: .6rem;
-    }
-    
-    #course .container img{
-        width: 50px;
-        height: 50px;
-    }
-    
-    #course #container img{
-        width: 50px;
-        height: 50px;
-    }
-    
-    #course .container h3{
-        font-size: 1.1rem;
-        word-spacing: .2rem;
-        margin: 1.2rem 0 .8rem 0;
-    }
-    
-    #course #container h3{
-        font-size: 1.1rem;
-        word-spacing: .2rem;
-        margin: 1.2rem 0 .8rem 0;
-    }
-    
-    #course .container p{
-        width: 13rem;
-        line-height: 1.5rem;
-        margin: .8rem;
-        font-size: .9rem;
-        color: rgb(145, 147, 147);
-    }
-    
-    #course #container p{
-        width: 13rem;
-        line-height: 1.5rem;
-        margin: .8rem;
-        font-size: .9rem;
-        color: rgb(145, 147, 147);
-    }
-    
-    #course .container a{
-        color: rgb(214, 20, 20);
-        font-size: .9rem;
-    }
-    
-    #course #container a{
-        color: rgb(214, 20, 20);
-        font-size: .9rem;
-    }
-
-    #testimonial{
-        margin: 6rem 0 4rem 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    #testimonial h2{
-        font-size: 1.2rem;
-        width: 13rem;
-        text-align: center;
-        word-spacing: .2rem;
-    }
-    
-    #testimonial .test-contain{
-        display: flex;
-        align-items: center;
-    }
-    
-    #testimonial .testimonials{
-        width: fit-content;
-        height: fit-content;
-        padding: 1rem;
-        box-shadow: 0 0 1rem .5rem rgb(231, 230, 230);
-        margin: 4rem .7rem 3rem .7rem;
-    }
-    
-    #testimonial .testimonials-img{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 11rem;
-    }
-    
-    #testimonial .testimonials-img img{
-        border-radius: 50%;
-        width: 50px;
-        height: 50px;
-    }
-    
-    #testimonial .testimonials-img h4{
-        font-size: .9rem;
-    }
-    
-    #testimonial .testimonials p{
-        width: 16rem;
-        font-size: .9rem;
-        color: rgb(145, 147, 147);
-        line-height: 1.5rem;
-        margin: .5rem 0 0 0;
-    }
-
-    #testimonial .testimonials .stars img{
-        height: 50px;
-        width: 50px;
-    }
-
-    #footer{
-        display: flex;
-        padding: 2rem 2rem 2rem 4rem;
-        background-color: rgb(26, 1, 43);
-        color: rgb(225, 225, 225);
-    }
-    
-    #footer .foot-logo .logo-contain{
-        display: flex;
-        align-items: center;
-        font-size: .9rem;
-    }
-    
-    #footer .foot-logo p{
-        width: 11.4rem;
-        font-size: .8rem;
-        line-height: 1.8rem;
-        margin: .4rem 0;
-    }
-    
-    #footer .foot-links, .foot-offers{
-        margin: 0 2.5em 0 2.5rem;
-    }
-    
-    #footer h4{
-        font-size: .9rem;
-        margin: 1rem 0 1rem 0;
     }
     
     #footer ul{
@@ -865,6 +1227,6 @@
         text-decoration: none;
         line-height: 2rem;
         color: rgb(225, 225, 225);
-        font-size: .8rem;
+        font-size: 16px;
     }
 }
